@@ -1,0 +1,31 @@
+.Banner {
+  width: 100vw;
+  height: 300px;
+  padding: 45px;
+  background-image: url('static/images/banner.png');
+  backdrop-filter: blur(1000px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Banner-container {
+  max-width: 1024px;
+  color: #fff;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .Banner{
+    width: 100%;
+    padding: 65px 0;
+  }
+
+  .Banner-container {
+    padding: 65px;
+  }
+}

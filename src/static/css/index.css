@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--bluish-white);
+}
+
+:root {
+  --green: #0EDA78;
+  --blue: #4068F5;
+  --bluish-white: #F1FAFF;
+  --white: #FFF;
+  --blue-dark: #102364;
+  --blue-grey: #314071;
+  --shadow: 0px 2px 12px rgba(0, 0, 0, 0.08), 0px 2px 8px rgba(0, 0, 0, 0.12);
+  --title-size: 32px;
+  --title-weight: 700;
+  --subtitle-size: 26px;
+  --subtitle-weight: 600;
+  --subtitle2-size: 20px;
+  --subtitle2-weight: 600;
+  --link-size: 16px;
+  --link-weight: 600;
+  --p-size: 15px;
+  --p-weight: normal;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}

@@ -1,0 +1,93 @@
+.Nav {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  padding: 5px 45px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.Nav-wrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Nav-search {
+  display: none;
+}
+
+.Nav-links {
+  display: none;
+}
+
+.Nav-menu {
+  background-color: #fff;
+  border: none;
+}
+
+.Nav-menu img {
+  width: 45px;
+}
+
+@media screen and (min-width: 768px) {
+  .Nav {
+    padding: 0;
+  }
+
+  .Nav-wrapper {
+    padding: 5px 45px;
+  }
+
+  .Nav-links {
+    display: flex;
+    grid-gap: 15px;
+  }
+
+  .Nav-links a {
+    font-size: var(--link-size);
+    font-weight: var(--link-weight);
+    text-decoration: none;
+    color: #000;
+  }
+
+  .Nav-search {
+    display: block;
+    width: auto;
+  }
+  
+  .Nav-search form {
+    width: 100%;
+    height: 40px;
+    display: flex;
+  }
+  
+  .Nav-search form > input {
+    padding: 5px 15px;
+    border: none;
+    background: #F1FAFF;
+    border-radius: 8px 0px 0px 8px;
+  }
+
+  .Nav-search form > button {
+    padding: 0px 15px;
+    height: 40px;
+    width: 80px;
+    border: none;
+    background: #0EDA78;
+    color: #fff;
+    font-size: var(--link-size);
+    font-weight: var(--link-weight);
+    border-radius: 0px 8px 8px 0px;
+  }
+
+  .Nav-menu {
+    display: none;
+  }
+
+}
