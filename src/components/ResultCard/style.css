@@ -1,0 +1,32 @@
+.ResultCard {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  display: inline-flex;
+  border-radius: 8px;
+  max-height: 216px;
+  width: auto;
+}
+
+.ResultCard img {
+  width: 150px;
+}
+
+.ResultCard-content {
+  padding: 5px;
+  width: 200px;
+  min-width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .ResultCard-content {
+    width: 250px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ResultCard-content {
+    width: 250px;
+    padding: 10px;
+  }
+}

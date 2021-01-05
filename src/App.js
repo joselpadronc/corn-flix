@@ -1,16 +1,25 @@
 import React from 'react'
+import { Route } from 'wouter'
 
 // COMPONENTS
 import HomePage from 'pages/HomePage/index'
+import SearchResults from 'pages/SearchResults/index'
 
 // STYLES
 import 'static/css/App.css'
 
 function App() {
   return (
-    <div>
-      <HomePage/>
-    </div>
+    <>
+      <Route
+        component={HomePage}
+        path='/'
+      />
+      <Route
+        component={SearchResults}
+        path='/search'
+      />
+    </>
   )
 }
 
