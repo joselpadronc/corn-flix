@@ -18,6 +18,11 @@
   margin-top: 60px;
   border-radius: 16px;
   object-fit: contain;
+  transition: .5s ease;
+}
+
+.MovieBanner-container img:hover {
+  transform: scale(1.15);
 }
 
 .InfoSection {

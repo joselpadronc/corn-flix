@@ -1,17 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useLocation } from 'wouter'
 
 // STYLES
 import './style.css'
 
 function DrawerManu() {
+  const [keyword, setKeyword] = useState()
+  const [location, pushLocation] =useLocation()
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    pushLocation(`/search/${keyword}`)
+  }
+
+  const handleChange = (event) => {
+    console.log(setKeyword(event.target.value))
+  }
+
   return (
     <div className='DrawerMenu'>
       <div className='DrawerMenu-content'>
         <li><a href='google.com'>Más populares</a></li>
         <li><a href='google.com'>Tendencias</a></li>
         <div className='DrawerMenu-content__search'>
-          <form>
-            <input placeholder='Busacar ...'/>
+          <form onSubmit={handleSubmit}>
+            <input onChange={handleChange} value={keyword} placeholder='Busacar ...'/>
             <button>Buscar</button>
           </form>
         </div>
