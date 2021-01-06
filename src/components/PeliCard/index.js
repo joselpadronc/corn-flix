@@ -1,18 +1,21 @@
 import React from 'react'
+import { Link } from 'wouter'
 
 // STATICS
 import './style.css'
-import PeliCardImg from 'static/images/peliCardImg.png'
 
-function PeliCard() {
+function PeliCard({ image, title, release, id }) {
+
   return(
-    <article className='PeliCard'>
-      <img src={PeliCardImg}></img>
-      <div className='PeliCard-overlay'>
-        <h2>Bob esponja</h2>
-        <p>1 ene, 2021</p>
-      </div>
-    </article>
+    <Link to={`/movie/${id}`}>
+      <article className='PeliCard'>
+        <img src={`https://www.themoviedb.org/t/p/w220_and_h330_face/${image}`} alt={title}></img>
+        <div className='PeliCard-overlay'>
+          <h3>{title}</h3>
+          <p>{release}</p>
+        </div>
+      </article>
+    </Link>
   )
 }
 

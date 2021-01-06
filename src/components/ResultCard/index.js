@@ -1,19 +1,31 @@
 import React from 'react'
+import { Link } from 'wouter'
 
 // STATICS
 import './style.css'
-import Img from 'static/images/imgResultCard.png'
+import defaultImg from 'static/images/WithoutImage.jpg'
 
-function ResultCard() {
+
+function ResultCard({ id, title, image, release, overview }) {
   return(
-    <article className='ResultCard'>
-      <img src={Img}/>
-      <div className='ResultCard-content'>
-        <h2>Mascotas Unidas</h2>
-        <p>8 noviembre 2019</p>
-        <p>Un astuto perro y una gatita consentida lideran a un equipo de héroes ...</p>
-      </div>
-    </article>
+    <Link to={`/movie/${id}`}>
+      <article className='ResultCard'>
+        <img src={
+          image === null
+          ? defaultImg
+          :`https://www.themoviedb.org/t/p/w220_and_h330_face/${image}`
+        } alt={title}/>
+        <div className='ResultCard-content'>
+          <h2>{title}</h2>
+          <p>{release}</p>
+          <p>{
+            overview === ""
+            ? 'Sin contenido en la descripcion'
+            : overview
+          }</p>
+        </div>
+      </article>
+    </Link>
   )
 }
 

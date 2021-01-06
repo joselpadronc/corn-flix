@@ -18,11 +18,11 @@ function App() {
       />
       <Route
         component={SearchResults}
-        path='/search'
+        path='/search/:keyword'
       />
       <Route
         component={MovieDetail}
-        path='/detail'
+        path='/movie/:id'
       />
     </>
   )

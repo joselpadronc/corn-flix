@@ -9,12 +9,40 @@
 
 .ResultCard img {
   width: 150px;
+  border-radius: 8px;
 }
 
 .ResultCard-content {
   padding: 5px;
   width: 200px;
   min-width: 200px;
+}
+
+.ResultCard-content h2 {
+  font-size: var(--sub2title-size);
+  margin: 0;
+}
+
+.ResultCard-content p:first-child {
+  overflow: hidden;
+}
+
+.ResultCard-content p {
+  font-size: 12.5px;
+  margin: 10px 0;
+  text-overflow: ellipsis;
+  max-height: 120px;
+  overflow-x: hidden;
+}
+
+.ResultCard-content p::-webkit-scrollbar {
+  background: rgba(31, 31, 31, 0.2);
+  margin-bottom: 50px;
+  width: 6px;
+}
+
+.ResultCard-content p::-webkit-scrollbar-thumb {
+  background: rgba(70, 129, 216, 0.4);
 }
 
 @media screen and (min-width: 768px) {

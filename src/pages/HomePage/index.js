@@ -3,7 +3,7 @@ import React from 'react'
 // COMPONENTS
 import NavBar from 'components/NavBar/index'
 import SearchForm from 'components/SearchForm/index'
-import Carrousel from 'components/Carrousel/index'
+import { CarrouselTrending, CarrouselPopular } from 'components/Carrousel/index'
 import Footer from 'components/Footer/index'
 
 
@@ -21,8 +21,8 @@ function HomePage() {
           <SearchForm/>
         </div>
       </main>
-      <Carrousel/>
-      <Carrousel/>
+      <CarrouselTrending/>
+      <CarrouselPopular/>
       <Footer/>
     </>
   )

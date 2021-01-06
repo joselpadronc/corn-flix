@@ -29,10 +29,11 @@
   color: #fff;
 }
 
-.PeliCard-overlay h2 {
+.PeliCard-overlay h3 {
   margin: 0;
-  font-size: var(--subtitle-size);
-  font-weight: var(--subtitle-weight);
+  white-space: pre-wrap;
+  font-size: var(--subtitle2-size);
+  font-weight: var(--subtitle2-weight);
 }
 
 .PeliCard-overlay p {

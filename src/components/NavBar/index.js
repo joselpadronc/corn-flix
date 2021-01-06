@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'wouter'
 
 // COMPONENTS
 import DrawerManu from 'components/DrawerMenu/index'
@@ -14,7 +15,6 @@ function NavBar() {
 
   function handleDraweMenu() {
     setDrawerMenu(!drawerMenu)
-    // console.log(setDrawerMenu(true))
   }
 
 
@@ -22,10 +22,12 @@ function NavBar() {
     <>
       <header className='Nav'>
         <nav className='Nav-wrapper'>
-          <img src={LogoGrande} alt='Logo de CornFlix'/>
+          <Link to='/'>
+            <img src={LogoGrande} alt='Logo de CornFlix'/>
+          </Link>
           <div className='Nav-links'>
-            <a href='google.com'>Más populares</a>
-            <a href='google.com'>Tendencias</a>
+            <Link to='/#popular'>Más populares</Link>
+            <Link to='/#trends'>Tendencias</Link>
           </div>
           <div className='Nav-search'>
             <form>
