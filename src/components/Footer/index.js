@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'wouter'
 
 // STATICS
 import './style.css'
@@ -12,16 +13,18 @@ function Footer() {
     <footer className='Footer'>
       <div className='Footer-container'>
         <div className='Footer-container__part1'>
-          <img src={Logo} alt='Logo de CorpFlix' />
-          <button>
+          <Link to='/'>
+            <img src={Logo} alt='Logo de CorpFlix' />
+          </Link>
+          <Link to='/'>
             <img src={Up} alt='Boton subir' />
-          </button>
+          </Link>
         </div>
         <div className='Footer-container__part2'>
           <p>API de themoviedb.org</p>
-          <button>
+          <a href='https://github.com/joselpadronc' target='_blank'>
             <img src={GitHub} alt='Logo de GitHub' />
-          </button>
+          </a>
         </div>
       </div>
       <div className='Footer-container__minifooter'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Redirect } from 'wouter'
+import { Route, Switch, Redirect } from 'wouter'
 
 // COMPONENTS
 import HomePage from 'pages/HomePage/index'
@@ -12,7 +12,7 @@ import 'static/css/App.css'
 
 function App() {
   return (
-    <>
+    <Switch>
       <Route
         component={HomePage}
         path='/'
@@ -29,8 +29,8 @@ function App() {
         component={NotFoundPage}
         path='/404'
       />
-      <Redirect to='/404'/>
-    </>
+      <Redirect from='*' to='/404'/>
+    </Switch>
   )
 }
 
