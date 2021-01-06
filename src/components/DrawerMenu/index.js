@@ -20,8 +20,6 @@ function DrawerManu() {
   return (
     <div className='DrawerMenu'>
       <div className='DrawerMenu-content'>
-        <li><a href='google.com'>Más populares</a></li>
-        <li><a href='google.com'>Tendencias</a></li>
         <div className='DrawerMenu-content__search'>
           <form onSubmit={handleSubmit}>
             <input onChange={handleChange} value={keyword} placeholder='Busacar ...'/>

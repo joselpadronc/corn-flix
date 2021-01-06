@@ -36,10 +36,6 @@ function NavBar() {
           <Link to='/'>
             <img src={LogoGrande} alt='Logo de CornFlix'/>
           </Link>
-          <div className='Nav-links'>
-            <Link to='/#popular'>Más populares</Link>
-            <Link to='/#trends'>Tendencias</Link>
-          </div>
           <div className='Nav-search'>
             <form onSubmit={handleSubmit}>
               <input onChange={handleChange} value={keyword} placeholder='Busacar ...'/>
