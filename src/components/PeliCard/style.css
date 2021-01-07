@@ -4,6 +4,7 @@
   max-width: 250px;
   height: 300px;
   border-radius: 8px;
+  cursor: pointer;
   transition: .5s ease;
 }
 

@@ -4,7 +4,7 @@
   width: 100vw;
   padding: 25px 45px;
   margin-top: 68px;
-  background-color: var(--white);
+  background-color: var(--background-base);
 }
 
 .DrawerMenu-content {
@@ -13,13 +13,6 @@
   align-items: flex-end;
   gap: 15px;
   list-style: none;
-}
-
-.DrawerMenu-content li > a {
-  font-size: var(--link-size);
-  font-weight: var(--link-weight);
-  text-decoration: none;
-  color: #000;
 }
 
 .DrawerMenu-content form {
@@ -32,7 +25,9 @@
   padding: 10px 15px;
   width: 200px;
   border: none;
-  background: #F1FAFF;
+  background: var(--background-base);
+  color: var(--color);
+  border: 1px solid var(--color);
   border-radius: 8px 0px 0px 8px;
 }
 
@@ -40,8 +35,8 @@
   width: 80px;
   height: 40px;
   border: none;
-  background: #0EDA78;
-  color: #fff;
+  background: var(--green);
+  color: var(--color);
   font-size: var(--link-size);
   font-weight: var(--link-weight);
   border-radius: 0px 8px 8px 0px;

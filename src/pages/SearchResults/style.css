@@ -6,10 +6,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--white);
+  color: var(--color);
+}
+
+.SearchSection h1 {
+  color: #fff;
 }
 
 .ResultsSection {
+  background-color: var(--background-base);
   width: 100vw;
   padding: 45px;
   display: flex;
@@ -31,6 +36,10 @@
     align-items: center;
     column-gap: 65px;
     justify-content: center;
+  }
+
+  .SectionBtnPagination {
+    width: auto;
   }
 
 }

@@ -4,12 +4,17 @@
   padding: 45px;
   background-image: url('https://www.unir.net/wp-content/uploads/2020/01/foto-cine-grabacion-escena.jpg');
   backdrop-filter: blur(1000px);
+  background-color: var(--background-base);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.Banner-container h1 {
+  color: #fff;
 }
 
 .Banner-container {

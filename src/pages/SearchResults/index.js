@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 // COMPONENTS
-import NavBar from 'components/NavBar/index'
 import SearchForm from 'components/SearchForm/index'
-import Footer from 'components/Footer/index'
 import ResultCard from 'components/ResultCard/index'
 import Spinner from 'components/Spinner/index'
 
@@ -37,7 +35,6 @@ function SearchResults({ params }) {
 
   return(
     <>
-      <NavBar/>
       <main className='SearchSection'>
         <h1>Seguir buscando pelis</h1>
         <SearchForm/>
@@ -59,7 +56,6 @@ function SearchResults({ params }) {
         )
       }
       </section>
-      <Footer/>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'wouter'
 
 // COMPONENTS
@@ -8,17 +8,22 @@ import DrawerManu from 'components/DrawerMenu/index'
 import './style.css'
 import LogoGrande from 'static/images/LogoGrande.png'
 import MenuIcon from 'static/images/MenuIcon.svg'
+import moon from 'static/images/moon.svg'
+import sun from 'static/images/sun.svg'
 
 
-function NavBar() {
+function NavBar({ setTheme, theme }) {
   const [drawerMenu, setDrawerMenu] = useState(false)
   const [keyword, setKeyword] = useState()
   const [location, pushLocation] =useLocation()
 
-  function handleDraweMenu() {
+  function handleDrawerMenu() {
     setDrawerMenu(!drawerMenu)
   }
 
+  function handleChangeTheme() {
+    setTheme(!theme)
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -36,13 +41,22 @@ function NavBar() {
           <Link to='/'>
             <img src={LogoGrande} alt='Logo de CornFlix'/>
           </Link>
+          <div className='Nav-theme'>
+            <button onClick={handleChangeTheme}>
+              {
+                theme
+                ? <img src={sun} alt='Cambio detema'/>
+                : <img src={moon} alt='Cambio detema'/>
+              }
+            </button>
+          </div>
           <div className='Nav-search'>
             <form onSubmit={handleSubmit}>
               <input onChange={handleChange} value={keyword} placeholder='Busacar ...'/>
               <button>Buscar</button>
             </form>
           </div>
-          <button className='Nav-menu' onClick={handleDraweMenu}>
+          <button className='Nav-menu' onClick={handleDrawerMenu}>
             <img src={MenuIcon} alt='Boton menu'/>
           </button>
         </nav>

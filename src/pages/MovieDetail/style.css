@@ -1,5 +1,6 @@
 .MovieBanner {
   width: 100vw;
+  background-color: var(--background-card);
   padding: 45px;
   text-align: center;
   display: flex;
@@ -28,6 +29,7 @@
 .InfoSection {
   width: 100vw;
   padding: 45px;
+  background-color: var(--background-base);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,6 +42,7 @@
 }
 
 .InfoSection h1 {
+  background-color: var(--background-card);
   width: 100%;
   padding: 25px 0;
   margin-top: -60px;
@@ -47,20 +50,22 @@
   word-wrap: break-word;
   text-align: center;
   width: 100%;
+  color: var(--color);
   border-radius: 8px;
-  background-color: var(--white);
 }
 
 .InfoSection-data {
+  color: var(--color);
   width: 100%;
   border-radius: 8px;
-  background-color: var(--white);
+  background-color: var(--background-card);
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 .InfoSection-categories {
+  color: var(--color);
   overflow: scroll;
   overflow-y: hidden;
   display: flex;
@@ -86,16 +91,17 @@
 .InfoSection-categories p {
   padding: 10px;
   border-radius: 8px;
-  background-color: var(--white);
+  background-color: var(--background-card);
 }
 
 .InfoSection-generalView {
   display: flex;
+  color: var(--color);
   flex-direction: column;
   justify-content: center;
   padding: 0px 45px;
   border-radius: 8px;
-  background-color: var(--white);
+  background-color: var(--background-card);
 }
 
 .InfoSection-generalView h2 {
@@ -115,7 +121,8 @@
 }
 
 .InfoSection-trailer {
-  background-color: var(--white);
+  color: var(--color);
+  background-color: var(--background-card);
   border-radius: 8px;
   width: 100%;
   height: 310px;

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
 // COMPONENTS
-import NavBar from 'components/NavBar/index'
-import Footer from 'components/Footer/index'
 import Spinner from 'components/Spinner/index'
 
 // STATICS
@@ -58,7 +56,6 @@ function MovieDetail({ params }) {
 
   return(
     <>
-      <NavBar/>
       <main className='MovieBanner'>
         <div className='MovieBanner-container'>
         { loading
@@ -109,7 +106,6 @@ function MovieDetail({ params }) {
           </div>
         </div>
       </section>
-      <Footer/>
     </>
   )
 }

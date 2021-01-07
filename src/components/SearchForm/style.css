@@ -10,6 +10,9 @@
   padding: 10px 25px;
   border: none;
   border-radius: 8px 0px 0px 8px;
+  background-color: var(--background-base);
+  border: 1px solid var(--color);
+  color: var(--color);
   font-size: var(--link-size);
   font-weight: var(--link-weight);
 }
@@ -23,5 +26,5 @@
   border: none;
   border-radius: 0px 8px 8px 0px;
   background-color: var(--green);
-  color: var(--white);
+  color: var(--color);
 }

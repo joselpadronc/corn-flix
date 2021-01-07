@@ -1,10 +1,13 @@
 .Carrousel {
+  background-color: var(--background-base);
+  color: var(--color);
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 45px;
+  margin: 0;
 }
 
 .Carrouse-title {

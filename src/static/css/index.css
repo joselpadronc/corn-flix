@@ -4,17 +4,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Red Hat Display', sans-serif;
-  background-color: var(--bluish-white);
+  background-color: var(--background-base);
 }
 
 :root {
   --green: #0EDA78;
   --blue: #4068F5;
-  --bluish-white: #F1FAFF;
-  --white: #FFF;
-  --blue-dark: #102364;
-  --blue-grey: #314071;
-  --shadow: 0px 2px 12px rgba(0, 0, 0, 0.08), 0px 2px 8px rgba(0, 0, 0, 0.12);
+  --blue-dark: #102464;
   --title-size: 32px;
   --title-weight: 700;
   --subtitle-size: 26px;
@@ -27,7 +23,31 @@ body {
   --p-weight: normal;
 }
 
+.is-dark-mode {
+  --color: #fff;
+  --background-base:#263983;
+  --background-card: #102464;
+  --shadow: 0px 2px 12px rgba(255, 255, 255, 0.08), 0px 2px 8px rgba(255, 255, 255, 0.12);
+}
+
+.is-light-mode {
+  --background-base:#F1FAFF;
+  --background-card: #FFF;
+  --color: #000;
+  --shadow: 0px 2px 12px rgba(0, 0, 0, 0.08), 0px 2px 8px rgba(0, 0, 0, 0.12);
+
+}
+
 button:focus,
 input:focus {
   outline: none;
+}
+
+@media (prefers-color-schema: dark) {
+  :root {
+    --white: #FFF;
+    --background-base:#314071;
+    --background-card: #102364;
+    --shadow: 0px 2px 12px rgba(255, 255, 255, 0.08), 0px 2px 8px rgba(255, 255, 255, 0.12);
+  }
 }

@@ -1,10 +1,12 @@
 .ResultCard {
-  background-color: var(--white);
+  background-color: var(--backgroud-card);
   box-shadow: var(--shadow);
   display: inline-flex;
   border-radius: 8px;
   max-height: 216px;
   width: auto;
+  color: var(--color);
+  cursor: pointer;
 }
 
 .ResultCard img {
@@ -13,7 +15,7 @@
 }
 
 .ResultCard-content {
-  padding: 5px;
+  padding: 8px;
   width: 200px;
   min-width: 200px;
 }
